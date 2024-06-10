@@ -18,3 +18,9 @@ class DataValidationConfig:
     unzip_data_dir: Path
     all_schema: dict
 
+
+# Data Transformation Entity
+@dataclass(frozen=True)
+class DataTransformationConfig:
+    root_dir: Path
+    data_path: Path
